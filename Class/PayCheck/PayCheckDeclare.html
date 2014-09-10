@@ -1,0 +1,45 @@
+<script type="text/javascript">
+	/*
+	Caleb Patrick Rosenquist
+	September 8th, 2014
+	Purpose: To demonstrate branching constructs in JavaScript
+	*/
+</script>
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+	var hours    = (Math.random()*20+30).toFixed(2);  //Hours worked with 2 decimal places
+	var payRate  = 10;  //Dollars paid per hour
+	var overTime = 40;  //Hours at which overtime starts
+	var pachCheck;      //Declare not initialize
+	
+	//Output the input
+	document.write("<h1> Hours worked =  " +hours+    " hrs.</h1>");
+	document.write("<h1> Pay rate     = $" +payRate+  "</h1>");
+	document.write("<h1> Over time    =  " +overTime+ "</h1>");
+	
+	//Determine Pay Check
+	switch(hours<overTime){
+		case true:{
+			payCheck = hours * payRate;break;
+		}
+		default:{
+			payCheck = hours*payRate + (hours-overTime)*payRate;  
+		}
+	}
+	
+	payCheck = payCheck.toFixed(2);
+	
+	//Output our Pay Check
+	document.write("<h1>Our Pay Check = $" +payCheck+ "</h1>");
+	
+	</script>
+</body>
+</html>
