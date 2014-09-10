@@ -1,0 +1,1 @@
+prompt("Hello User. Where, if you don't mind me asking, are you from?");
