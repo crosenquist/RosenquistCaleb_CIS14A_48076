@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<h1>Retirement Tables</h1>
+<script type="text/javascript">
+//Setup the savins table
+var balance = 100;
+varintRate = 5;var deposit = 500;
+var str ="";
+//Output the initial Conditions
+document.write
+
+<script type="text/javascript">
+	//Generatae a table
+	//++year=year++=year+1=(year+=1)
+	for(var year=1;year<=50;++year){
+		str+="<tr>";
+		str+=("<td>"+year+"</td>");
+		//Calculate the balance
+		//balance=balance*(1+intRate/100);
+		balance*=(1+intRate/100);
+		balance+=deposit;
+		balance=balance.toFized(2);
+		str+=("<td>"+balance+"</td>");
+		str+="</tr>";
+	}
+
+</body>
+</html>

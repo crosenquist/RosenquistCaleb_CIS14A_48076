@@ -19,9 +19,11 @@
 
 <script type="text/javascript">
 	//Setup the savings table
-	var balance = 1000;  //Units in Dollars
-	var intRate = 5;     //Unites in percentage rate per annual
-	var deposit = 500;   //yearly deposit
+	var balance1 = 0;  //Units in Dollars
+	var balance2 = 0;
+	var intRate1 = 5;     //Unites in percentage rate per annual
+	var intRate2 = 6;
+	var deposit = 12000;   //yearly deposit
 	var str="";
 	
 	//Outpute the Initial Conditions
@@ -35,6 +37,7 @@
   <tr>
     <th>Year</th>
     <th>Savings $</th>
+    <th>Savings $</th>
   </tr>
 
 
@@ -46,12 +49,19 @@
 		str+=("<tr>");
 		str+=("<td>"+year+"</td>");
 		
-		//Calculate the Ballance
-		balance*=(1+intRate/100);
-		balance+=deposit;
-		balance=balance.toFixed(2);
+		//Calculate the Ballance1
+		balance1*=(1+intRate1/100);
+		balance1+=deposit;
+		balance1=balance1.toFixed(2);
 		
-		str+=("<td>"+balance+"</td>");
+		str+=("<td>"+balance1+"</td>");
+		
+		//Calculate the Ballance2
+		balance2*=(1+intRate2/100);
+		balance2+=deposit;
+		balance2=balance2.toFixed(2);
+		
+		str+=("<td>"+balance2+"</td>");
 		str+=("</tr>");
 		
 	}

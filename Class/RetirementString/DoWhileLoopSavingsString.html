@@ -19,9 +19,9 @@
 
 <script type="text/javascript">
 	//Setup the savings table
-	var balance = 1000;  //Units in Dollars
-	var intRate = 5;     //Unites in percentage rate per annual
-	var deposit = 500;   //yearly deposit
+	var balance = 0;  //Units in Dollars
+	var intRate = 10;     //Unites in percentage rate per annual
+	var deposit = 2000;   //yearly deposit
 	var str="";
 	
 	//Outpute the Initial Conditions
@@ -41,7 +41,8 @@
 <script type="text/javascript">
 	//Generate a table
 	//for(var year=0;year<=100;year++){
-	for(var year=0;year<=50;year++){
+	var year=1;
+	do{
 		str+="<tr>";
 		str+=("<tr>");
 		str+=("<td>"+year+"</td>");
@@ -53,8 +54,8 @@
 		
 		str+=("<td>"+balance+"</td>");
 		str+=("</tr>");
-		
-	}
+		year++
+	}while(year<=50);
 	
 	document.writeln(str);
 	
